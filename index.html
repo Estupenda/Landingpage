@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Symbiotic Intelligence by EstuTech | Work With AI, Not Against It</title>
+<meta name="description" content="A practical book for the modern era. Learn how to work with AI instead of competing against it. Instant download.">
+
+<!-- META PIXEL: paste your Meta Pixel base code here (from Events Manager) -->
+<!-- Then fire a Purchase or InitiateCheckout event on the buy buttons if your checkout allows it -->
+
+<style>
+  :root{
+    --bg:#0a0a0a; --card:#141414; --line:#262626;
+    --text:#f4f4f4; --muted:#a8a8a8; --red:#d4202e; --gold:#ffd23f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;font-size:17px}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  section{padding:48px 0;border-bottom:1px solid var(--line)}
+  h1,h2{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+  h1{font-size:clamp(32px,8vw,52px);margin-bottom:16px}
+  h1 em{color:var(--red);font-style:italic}
+  h2{font-size:clamp(24px,6vw,32px);margin-bottom:18px}
+  p{color:var(--muted);margin-bottom:14px}
+  .eyebrow{letter-spacing:.18em;font-size:12px;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+
+  /* Currency toggle */
+  .toggle{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;margin:6px 0 18px}
+  .toggle button{background:transparent;border:0;color:var(--muted);padding:9px 18px;font-size:14px;cursor:pointer}
+  .toggle button.active{background:var(--red);color:#fff}
+
+  .price{font-size:40px;font-weight:700;color:var(--text);margin:4px 0 14px}
+  .price small{font-size:15px;color:var(--muted);font-weight:400}
+
+  .btn{display:block;text-align:center;background:var(--red);color:#fff;text-decoration:none;font-weight:700;padding:16px 24px;border-radius:10px;font-size:18px;margin:18px 0 8px}
+  .btn:active{transform:scale(.98)}
+  .note{font-size:13px;color:var(--muted);text-align:center}
+
+  /* Cover */
+  .cover-box{display:flex;justify-content:center;margin:28px 0 8px}
+  .cover-box img{width:240px;max-width:70%;border-radius:6px;box-shadow:0 20px 60px rgba(212,32,46,.25)}
+  .fallback-cover{display:none;width:240px;aspect-ratio:512/800;background:#000;border:1px solid var(--line);border-radius:6px;padding:28px 18px;text-align:center;flex-direction:column;justify-content:center;box-shadow:0 20px 60px rgba(212,32,46,.25)}
+  .fallback-cover b{font-family:Georgia,serif;font-size:28px;letter-spacing:.06em}
+  .fallback-cover i{font-family:Georgia,serif;color:var(--red);font-size:26px}
+  .fallback-cover span{font-size:11px;letter-spacing:.2em;color:var(--muted);margin-top:24px}
+
+  ul.ticks{list-style:none}
+  ul.ticks li{padding:10px 0 10px 34px;position:relative;color:var(--text);border-bottom:1px dashed var(--line)}
+  ul.ticks li::before{content:"\2713";position:absolute;left:0;top:10px;color:var(--gold);font-weight:700}
+
+  .grid{display:grid;gap:12px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;color:var(--text)}
+
+  details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:600;color:var(--text)}
+  details p{margin:10px 0 0}
+
+  footer{padding:32px 0 90px;text-align:center;color:var(--muted);font-size:13px}
+
+  /* Sticky mobile buy bar */
+  .sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(10,10,10,.96);border-top:1px solid var(--line);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;z-index:10}
+  .sticky .sp{font-weight:700}
+  .sticky a{background:var(--red);color:#fff;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:8px;white-space:nowrap}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section style="padding-top:40px">
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow">A practical book for the modern era</div>
+    <h1>Don't Compete With AI.<br><em>Work With It.</em></h1>
+    <p>Symbiotic Intelligence shows you how to partner with AI to work smarter, move faster and stay relevant as the world changes.</p>
+
+    <div class="cover-box">
+      <!-- Put your cover image file next to this page and name it: 1792419241794.png -->
+      <img src="1792419241794.png" alt="Symbiotic Intelligence book cover by EstuTech"
+           onerror="this.style.display='none';document.getElementById('fb').style.display='flex'">
+      <div class="fallback-cover" id="fb">
+        <b>SYMBIOTIC</b><i>Intelligence</i><span>ESTUTECH</span>
+      </div>
+    </div>
+
+    <div class="toggle" role="group" aria-label="Choose your currency">
+      <button id="btnNG" onclick="setRegion('NG')">Nigeria (₦)</button>
+      <button id="btnGL" onclick="setRegion('GL')">Worldwide ($)</button>
+    </div>
+    <div class="price" id="price">$12 <small>one-time</small></div>
+    <a class="btn buy" href="#" id="buy1">Get Instant Access</a>
+    <div class="note">Instant digital download. Read on phone, tablet or laptop.</div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section>
+  <div class="wrap">
+    <h2>The world of work is changing fast</h2>
+    <p>AI is changing how people work, create and earn. Some people are afraid of it. Some are ignoring it. And some are quietly learning to use it to get ahead.</p>
+    <p>The gap between those groups grows wider every day. You don't need to be a tech expert to be on the right side of it.</p>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section>
+  <div class="wrap">
+    <h2>Treat AI as a partner, not a threat</h2>
+    <p>Symbiotic Intelligence gives you a simple way to think about AI and use it in your daily life and work, so it makes you faster, sharper and more valuable.</p>
+    <ul class="ticks">
+      <!-- Edit these to match your real chapters -->
+      <li>A clear understanding of how to work alongside AI</li>
+      <li>Practical ideas you can start using right away</li>
+      <li>A mindset shift from "AI will replace me" to "AI helps me do more"</li>
+      <li>Easy-to-read language, no tech background needed</li>
+      <li>Instant digital download</li>
+    </ul>
+  </div>
+</section>
+
+<!-- WHO FOR -->
+<section>
+  <div class="wrap">
+    <h2>Who this book is for</h2>
+    <div class="grid">
+      <div class="box">Employees who want to stay relevant at work</div>
+      <div class="box">Freelancers and creators who want to deliver faster</div>
+      <div class="box">Students and job seekers building future-proof skills</div>
+      <div class="box">Business owners curious about using AI</div>
+      <div class="box">Anyone who feels left behind by AI</div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTHOR -->
+<section>
+  <div class="wrap">
+    <h2>About EstuTech</h2>
+    <p>EstuTech creates practical, easy-to-follow digital guides that help everyday people use technology to grow.</p>
+    <p><!-- Add 2-3 lines about you and why you wrote this book --></p>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="buy">
+  <div class="wrap" style="text-align:center">
+    <h2>Start working with AI today</h2>
+    <div class="price" id="price2">$12 <small>one-time</small></div>
+    <a class="btn buy" href="#" id="buy2">Get My Copy Now</a>
+    <div class="note">Secure checkout. Instant access after payment.</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <h2>Questions</h2>
+    <details><summary>Do I need technical skills?</summary><p>No. The book is written in simple, practical language.</p></details>
+    <details><summary>How do I receive the book?</summary><p>You get access right after payment.</p></details>
+    <details><summary>What can I read it on?</summary><p>Any phone, tablet or computer that opens ebook or PDF files.</p></details>
+    <details><summary>Will this guarantee me a job or income?</summary><p>No book can promise that. It gives you practical knowledge and a smarter way to use AI. Results depend on how you apply it.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr"></span> EstuTech. All rights reserved.</div>
+</footer>
+
+<div class="sticky">
+  <span class="sp" id="stickyPrice">$12</span>
+  <a href="#" class="buy" id="buy3">Get Instant Access</a>
+</div>
+
+<script>
+  // ====== EDIT THESE ======
+  var LINKS = {
+    NG: "https://selar.com/891627kb42",   // e.g. your Selar / Paystack link for N15,000
+    GL: "https://www.amazon.com/dp/B0HQPCLMJG"     // e.g. your Gumroad / Selar / Amazon link for $12
+  };
+  var PRICES = { NG: "₦15,000", GL: "$12" };
+  // ========================
+
+  function setRegion(r){
+    try{ localStorage.setItem("region", r); }catch(e){}
+    var p = PRICES[r];
+    document.getElementById("price").innerHTML = p + ' <small>one-time</small>';
+    document.getElementById("price2").innerHTML = p + ' <small>one-time</small>';
+    document.getElementById("stickyPrice").textContent = p;
+    ["buy1","buy2","buy3"].forEach(function(id){ document.getElementById(id).href = LINKS[r]; });
+    document.getElementById("btnNG").classList.toggle("active", r==="NG");
+    document.getElementById("btnGL").classList.toggle("active", r==="GL");
+  }
+
+  // Default region: saved choice, then ?r=NG / ?r=GL in the ad URL, then timezone guess
+  (function init(){
+    var r = null;
+    try{ r = new URLSearchParams(location.search).get("r"); }catch(e){}
+    if(r !== "NG" && r !== "GL"){
+      try{ r = localStorage.getItem("region"); }catch(e){}
+    }
+    if(r !== "NG" && r !== "GL"){
+      var tz = "";
+      try{ tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; }catch(e){}
+      r = (tz === "Africa/Lagos") ? "NG" : "GL";
+    }
+    setRegion(r);
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
